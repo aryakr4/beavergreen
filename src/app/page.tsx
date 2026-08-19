@@ -31,7 +31,14 @@ export default function Home() {
         {geoError && <p className="mt-1 text-sm text-stone-400">{geoError}</p>}
       </div>
 
-      <FilterBar filters={filters} onChange={setFilters} />
+      <div>
+        <FilterBar filters={filters} onChange={setFilters} disabled={!coords} />
+        {!coords && (
+          <p className="mt-1 text-sm text-stone-400">
+            Enable location to filter by distance.
+          </p>
+        )}
+      </div>
 
       <div className="h-96 overflow-hidden rounded-lg border border-stone-200">
         <LocationMap locations={filtered} selectedId={selectedId} onSelect={setSelectedId} origin={coords} />

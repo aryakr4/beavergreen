@@ -7,10 +7,17 @@ vi.mock("@/lib/db", () => ({ insertReview, listReviewsForLocation }));
 const isRateLimited = vi.fn();
 vi.mock("@/lib/rateLimit", () => ({ isRateLimited }));
 
+const getLocationById = vi.fn();
+vi.mock("@/data/locations", () => ({ getLocationById }));
+
 beforeEach(() => {
   insertReview.mockReset();
   listReviewsForLocation.mockReset();
   isRateLimited.mockReset();
+  getLocationById.mockReset();
+  getLocationById.mockImplementation((id: string) =>
+    id === "multnomah-falls" ? { id: "multnomah-falls", name: "Multnomah Falls" } : undefined
+  );
 });
 
 describe("GET /api/reviews", () => {
@@ -91,6 +98,42 @@ describe("POST /api/reviews", () => {
     const { POST } = await import("@/app/api/reviews/route");
     const res = await POST(post(validBody));
     expect(res.status).toBe(429);
+    expect(insertReview).not.toHaveBeenCalled();
+  });
+
+  it("rejects text over 2000 characters", async () => {
+    isRateLimited.mockResolvedValueOnce(false);
+    const { POST } = await import("@/app/api/reviews/route");
+    const res = await POST(post({ ...validBody, text: "a".repeat(2001) }));
+    expect(res.status).toBe(400);
+    expect(insertReview).not.toHaveBeenCalled();
+  });
+
+  it("rejects authorName over 80 characters", async () => {
+    isRateLimited.mockResolvedValueOnce(false);
+    const { POST } = await import("@/app/api/reviews/route");
+    const res = await POST(post({ ...validBody, authorName: "a".repeat(81) }));
+    expect(res.status).toBe(400);
+    expect(insertReview).not.toHaveBeenCalled();
+  });
+
+  it("rejects an unknown locationId", async () => {
+    isRateLimited.mockResolvedValueOnce(false);
+    const { POST } = await import("@/app/api/reviews/route");
+    const res = await POST(post({ ...validBody, locationId: "not-a-real-place" }));
+    expect(res.status).toBe(400);
+    expect(insertReview).not.toHaveBeenCalled();
+  });
+
+  it("returns 400 for a malformed JSON body", async () => {
+    const { POST } = await import("@/app/api/reviews/route");
+    const req = new Request("http://localhost/api/reviews", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-forwarded-for": "1.2.3.4" },
+      body: "{not valid json",
+    });
+    const res = await POST(req);
+    expect(res.status).toBe(400);
     expect(insertReview).not.toHaveBeenCalled();
   });
 });

@@ -18,6 +18,8 @@ export function useGeolocation(): GeolocationState {
 
   useEffect(() => {
     if (typeof navigator === "undefined" || !navigator.geolocation) {
+      // one-shot geolocation read on mount, not a sync loop
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setState({ coords: null, loading: false, error: "Geolocation is not available in this browser." });
       return;
     }

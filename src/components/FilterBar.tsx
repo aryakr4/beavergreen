@@ -7,13 +7,14 @@ import type { Category, Difficulty, USState } from "@/lib/types";
 export interface FilterBarProps {
   filters: LocationFilters;
   onChange: (filters: LocationFilters) => void;
+  disabled?: boolean;
 }
 
 const CATEGORIES: Category[] = ["waterfall", "hike", "viewpoint", "lake", "hot-spring", "beach", "forest", "other"];
 const DIFFICULTIES: Difficulty[] = ["easy", "moderate", "hard"];
 const STATES: USState[] = ["OR", "WA"];
 
-export default function FilterBar({ filters, onChange }: FilterBarProps) {
+export default function FilterBar({ filters, onChange, disabled }: FilterBarProps) {
   const update = (patch: Partial<LocationFilters>) => {
     const next = { ...filters, ...patch };
     (Object.keys(next) as (keyof LocationFilters)[]).forEach((key) => {
@@ -79,11 +80,12 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
           aria-label="Max distance"
           type="number"
           min={0}
+          disabled={disabled}
           value={filters.maxDistanceMiles ?? ""}
           onChange={(e) =>
             update({ maxDistanceMiles: e.target.value ? Number(e.target.value) : undefined })
           }
-          className="mt-1 w-28 rounded border border-stone-300 px-2 py-1"
+          className="mt-1 w-28 rounded border border-stone-300 px-2 py-1 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-400"
         />
       </label>
     </div>

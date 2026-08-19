@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { insertReview, listReviewsForLocation, type ReviewRow } from "@/lib/db";
 import { isRateLimited } from "@/lib/rateLimit";
+import { getLocationById } from "@/data/locations";
+
+const MAX_TEXT_LENGTH = 2000;
+const MAX_AUTHOR_NAME_LENGTH = 80;
 
 function toApiShape(row: ReviewRow) {
   return {
@@ -24,8 +28,14 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
-  const { locationId, rating, text, authorName, honeypot } = body ?? {};
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid review submission" }, { status: 400 });
+  }
+
+  const { locationId, rating, text, authorName, honeypot } = (body ?? {}) as Record<string, unknown>;
 
   // Bots that fill the hidden honeypot field get a fake success so they
   // don't learn to leave it blank, but nothing is written.
@@ -37,11 +47,17 @@ export async function POST(request: Request) {
     typeof locationId !== "string" ||
     typeof text !== "string" ||
     text.trim().length === 0 ||
+    text.length > MAX_TEXT_LENGTH ||
     typeof rating !== "number" ||
     !Number.isInteger(rating) ||
     rating < 1 ||
-    rating > 5
+    rating > 5 ||
+    (typeof authorName === "string" && authorName.length > MAX_AUTHOR_NAME_LENGTH)
   ) {
+    return NextResponse.json({ error: "Invalid review submission" }, { status: 400 });
+  }
+
+  if (!getLocationById(locationId)) {
     return NextResponse.json({ error: "Invalid review submission" }, { status: 400 });
   }
 

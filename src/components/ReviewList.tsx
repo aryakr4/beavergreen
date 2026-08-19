@@ -22,6 +22,8 @@ export default function ReviewList({ locationId, refreshKey }: ReviewListProps) 
 
   useEffect(() => {
     let cancelled = false;
+    // fetch result with cancellation guard, not a sync loop
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setReviews(null);
     setError(null);
 

@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# beavergreen
 
-## Getting Started
+A visual nature-exploration map for Oregon and Washington. It answers "where
+should I go this weekend?" — a curated, hand-filled collection of spots
+(waterfalls, hikes, viewpoints, lakes, hot springs, beaches, forests), each
+with real photos, a personal write-up, distance info, and lightweight public
+reviews. It is not a trail-navigation app, has no user accounts, and no part
+of the site content is AI-generated — everything is hand-authored by the
+site owner.
 
-First, run the development server:
+## Adding a new location
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Locations live in `src/data/locations.json`, a plain array of objects. The
+shape is defined by the `Location` type in `src/lib/types.ts` — check there
+for the full set of fields and which are optional. At a minimum:
+
+```json
+{
+  "id": "some-place",
+  "name": "Some Place",
+  "state": "OR",
+  "category": "waterfall",
+  "difficulty": "easy",
+  "lat": 45.1234,
+  "lng": -122.1234,
+  "description": "Your own notes about this spot.",
+  "bestSeason": ["spring", "fall"],
+  "practicalInfo": { "parking": "...", "fee": "Free", "dogFriendly": true },
+  "photos": ["/images/some-place/photo1.jpg"],
+  "createdAt": "2026-08-19"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `id` should be a URL-safe slug (lowercase, hyphen-separated) — it's used
+  both as the unique key and as the location's URL, `/locations/<id>`.
+- `category` must be one of the values in the `Category` type
+  (`src/lib/types.ts`), and `state` must be `"OR"` or `"WA"`.
+- `bestSeason` and `practicalInfo` are optional; omit them if unknown.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Drop photos in `public/images/<id>/` and reference them in the `photos`
+array as `/images/<id>/<filename>`. If no photos exist yet, point at
+`/images/placeholder.svg` and swap it in later.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local development
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then open `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Reviews feature (optional, for local dev)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Everything on the site reads from the static JSON above except public
+reviews, which are stored in Postgres so they persist across requests. This
+is only needed if you want the review form/list to work locally:
 
-## Deploy on Vercel
+1. Copy `.env.local.example` to `.env.local` and set `DATABASE_URL` — a free
+   [Neon](https://neon.tech) project works well, or point it at a local
+   Postgres instance.
+2. Run the schema against that database once:
+   ```bash
+   psql "$DATABASE_URL" -f scripts/schema.sql
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Verification
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test          # unit + component tests (Vitest)
+npm run build     # production build
+```

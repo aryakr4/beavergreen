@@ -28,6 +28,18 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
           <p className="mt-1 text-stone-600">
             {location.state} &middot; {location.category} &middot; {location.difficulty}
           </p>
+          {location.bestSeason && location.bestSeason.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {location.bestSeason.map((season) => (
+                <span
+                  key={season}
+                  className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800"
+                >
+                  {season}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <FavoriteButton locationId={location.id} />
       </div>
