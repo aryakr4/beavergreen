@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import type { Location } from "@/lib/types";
+import type { GeolocationState } from "@/hooks/useGeolocation";
 
 const location: Location = {
   id: "multnomah-falls", name: "Multnomah Falls", state: "OR", category: "waterfall",
@@ -8,7 +9,7 @@ const location: Location = {
   photos: ["/images/placeholder.svg"], createdAt: "2026-08-19",
 };
 
-let mockUseGeolocation = {
+let mockUseGeolocation: GeolocationState = {
   coords: { lat: 45.5152, lng: -122.6784 },
   loading: false,
   error: null,
