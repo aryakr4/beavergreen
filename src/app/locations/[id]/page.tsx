@@ -4,6 +4,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import DistanceInfo from "@/components/DistanceInfo";
 import NearbySpots from "@/components/NearbySpots";
 import FavoriteButton from "@/components/FavoriteButton";
+import ReviewsSection from "@/components/ReviewsSection";
 
 export async function generateStaticParams() {
   return getAllLocations().map((loc) => ({ id: loc.id }));
@@ -51,6 +52,8 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
         <h2 className="mb-2 font-semibold text-stone-900">Nearby spots</h2>
         <NearbySpots location={location} allLocations={allLocations} />
       </div>
+
+      <ReviewsSection locationId={location.id} />
     </div>
   );
 }
