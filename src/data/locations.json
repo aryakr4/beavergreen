@@ -1,0 +1,72 @@
+[
+  {
+    "id": "multnomah-falls",
+    "name": "Multnomah Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 45.5762,
+    "lng": -122.1158,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": ["spring", "fall", "winter"],
+    "practicalInfo": { "parking": "Large lot off I-84, fills early on weekends", "fee": "Free", "dogFriendly": true },
+    "photos": ["/images/placeholder.svg"],
+    "createdAt": "2026-08-19"
+  },
+  {
+    "id": "smith-rock",
+    "name": "Smith Rock State Park",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "hard",
+    "lat": 44.3675,
+    "lng": -121.1401,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": ["spring", "fall"],
+    "practicalInfo": { "parking": "Day-use fee lot", "fee": "$5 day-use", "dogFriendly": true },
+    "photos": ["/images/placeholder.svg"],
+    "createdAt": "2026-08-19"
+  },
+  {
+    "id": "diablo-lake",
+    "name": "Diablo Lake Overlook",
+    "state": "WA",
+    "category": "viewpoint",
+    "difficulty": "easy",
+    "lat": 48.7128,
+    "lng": -121.0959,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": ["summer", "fall"],
+    "practicalInfo": { "parking": "Roadside pullout", "fee": "Free", "dogFriendly": true },
+    "photos": ["/images/placeholder.svg"],
+    "createdAt": "2026-08-19"
+  },
+  {
+    "id": "ruby-beach",
+    "name": "Ruby Beach",
+    "state": "WA",
+    "category": "beach",
+    "difficulty": "easy",
+    "lat": 47.7128,
+    "lng": -124.4165,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": ["summer"],
+    "practicalInfo": { "parking": "Small lot off Highway 101", "fee": "Olympic National Park pass", "dogFriendly": false },
+    "photos": ["/images/placeholder.svg"],
+    "createdAt": "2026-08-19"
+  },
+  {
+    "id": "bagby-hot-springs",
+    "name": "Bagby Hot Springs",
+    "state": "OR",
+    "category": "hot-spring",
+    "difficulty": "moderate",
+    "lat": 44.9995,
+    "lng": -122.2314,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": ["fall", "winter", "spring"],
+    "practicalInfo": { "parking": "Trailhead lot", "fee": "$5 day-use", "dogFriendly": false },
+    "photos": ["/images/placeholder.svg"],
+    "createdAt": "2026-08-19"
+  }
+]
