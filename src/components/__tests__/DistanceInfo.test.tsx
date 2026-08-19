@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import type { Location } from "@/lib/types";
 
@@ -8,13 +8,27 @@ const location: Location = {
   photos: ["/images/placeholder.svg"], createdAt: "2026-08-19",
 };
 
+let mockUseGeolocation = {
+  coords: { lat: 45.5152, lng: -122.6784 },
+  loading: false,
+  error: null,
+};
+
 vi.mock("@/hooks/useGeolocation", () => ({
-  useGeolocation: () => ({ coords: { lat: 45.5152, lng: -122.6784 }, loading: false, error: null }),
+  useGeolocation: () => mockUseGeolocation,
 }));
 
 import DistanceInfo from "@/components/DistanceInfo";
 
 describe("DistanceInfo", () => {
+  beforeEach(() => {
+    mockUseGeolocation = {
+      coords: { lat: 45.5152, lng: -122.6784 },
+      loading: false,
+      error: null,
+    };
+  });
+
   it("shows distance from the visitor when geolocation succeeds", () => {
     render(<DistanceInfo location={location} />);
     expect(screen.getByText(/mi from you/i)).toBeInTheDocument();
@@ -24,5 +38,16 @@ describe("DistanceInfo", () => {
     render(<DistanceInfo location={location} />);
     expect(screen.getByText(/Portland/)).toBeInTheDocument();
     expect(screen.getByText(/Seattle/)).toBeInTheDocument();
+  });
+
+  it("shows error message when geolocation is denied", () => {
+    mockUseGeolocation = {
+      coords: null,
+      loading: false,
+      error: "Enable location access to see distance from you.",
+    };
+    render(<DistanceInfo location={location} />);
+    expect(screen.getByText(/enable location access/i)).toBeInTheDocument();
+    expect(screen.queryByText(/mi from you/i)).not.toBeInTheDocument();
   });
 });
