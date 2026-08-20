@@ -15,17 +15,17 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-parchment text-basalt antialiased">
-        <header className="bg-basalt">
+      <body className="min-h-screen bg-white text-oregon-blue antialiased">
+        <header className="bg-oregon-blue">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <Link href="/" className={`${logoFont.className} text-lg tracking-wide text-glacial`}>
+            <Link href="/" className={`${logoFont.className} text-lg tracking-wide text-gold`}>
               beavergreen
             </Link>
-            <nav className="flex gap-4 text-sm text-fog">
-              <Link href="/" className="hover:text-glacial">
+            <nav className="flex gap-4 text-sm text-white/70">
+              <Link href="/" className="hover:text-gold">
                 Explore
               </Link>
-              <Link href="/passport" className="hover:text-glacial">
+              <Link href="/passport" className="hover:text-gold">
                 Passport
               </Link>
             </nav>

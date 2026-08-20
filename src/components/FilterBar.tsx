@@ -28,14 +28,14 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
   };
 
   return (
-    <div className="flex flex-wrap gap-4 rounded-lg border border-fog/30 bg-white p-4">
-      <label className="flex flex-col text-sm text-basalt/80">
+    <div className="flex flex-wrap gap-4 rounded-lg border border-oregon-blue/15 bg-white p-4">
+      <label className="flex flex-col text-sm text-oregon-blue/80">
         Category
         <select
           aria-label="Category"
           value={filters.category ?? ""}
           onChange={handleSelect("category")}
-          className="mt-1 rounded border border-fog/50 px-2 py-1"
+          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
         >
           <option value="">Any</option>
           {CATEGORIES.map((c) => (
@@ -44,13 +44,13 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-basalt/80">
+      <label className="flex flex-col text-sm text-oregon-blue/80">
         State
         <select
           aria-label="State"
           value={filters.state ?? ""}
           onChange={handleSelect("state")}
-          className="mt-1 rounded border border-fog/50 px-2 py-1"
+          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
         >
           <option value="">Any</option>
           {STATES.map((s) => (
@@ -59,13 +59,13 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-basalt/80">
+      <label className="flex flex-col text-sm text-oregon-blue/80">
         Difficulty
         <select
           aria-label="Difficulty"
           value={filters.difficulty ?? ""}
           onChange={handleSelect("difficulty")}
-          className="mt-1 rounded border border-fog/50 px-2 py-1"
+          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
         >
           <option value="">Any</option>
           {DIFFICULTIES.map((d) => (
@@ -74,7 +74,7 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-basalt/80">
+      <label className="flex flex-col text-sm text-oregon-blue/80">
         Max distance (miles)
         <input
           aria-label="Max distance"
@@ -85,7 +85,7 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
           onChange={(e) =>
             update({ maxDistanceMiles: e.target.value ? Number(e.target.value) : undefined })
           }
-          className="mt-1 w-28 rounded border border-fog/50 px-2 py-1 disabled:cursor-not-allowed disabled:bg-fog/10 disabled:text-fog"
+          className="mt-1 w-28 rounded border border-oregon-blue/25 px-2 py-1 disabled:cursor-not-allowed disabled:bg-oregon-blue/5 disabled:text-oregon-blue/40"
         />
       </label>
     </div>

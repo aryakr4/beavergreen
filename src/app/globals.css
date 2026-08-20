@@ -2,12 +2,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-basalt: #1c2321;
-  --color-parchment: #f3efe6;
-  --color-moss: #4a5d3a;
-  --color-glacial: #3fa6a0;
-  --color-rust: #b5542e;
-  --color-fog: #8b9490;
+  /* Oregon state flag navy */
+  --color-oregon-blue: #002a86;
+  /* Washington state flag evergreen */
+  --color-washington-green: #008457;
+  /* Shared gold from both states' flag seals */
+  --color-gold: #ffd520;
 }
 
 :root {

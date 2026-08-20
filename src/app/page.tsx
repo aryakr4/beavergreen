@@ -24,23 +24,23 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-basalt">Where should you go this weekend?</h1>
-        <p className="mt-1 text-basalt/70">
+        <h1 className="text-2xl font-bold text-oregon-blue">Where should you go this weekend?</h1>
+        <p className="mt-1 text-oregon-blue/70">
           Hand-picked spots across Oregon and Washington — pictures, notes, and how far they are from you.
         </p>
-        {geoError && <p className="mt-1 text-sm text-fog">{geoError}</p>}
+        {geoError && <p className="mt-1 text-sm text-oregon-blue/50">{geoError}</p>}
       </div>
 
       <div>
         <FilterBar filters={filters} onChange={setFilters} disabled={!coords} />
         {!coords && (
-          <p className="mt-1 text-sm text-fog">
+          <p className="mt-1 text-sm text-oregon-blue/50">
             Enable location to filter by distance.
           </p>
         )}
       </div>
 
-      <div className="h-96 overflow-hidden rounded-lg border border-fog/30">
+      <div className="h-96 overflow-hidden rounded-lg border border-oregon-blue/15">
         <LocationMap locations={filtered} selectedId={selectedId} onSelect={setSelectedId} origin={coords} />
       </div>
 

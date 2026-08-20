@@ -12,7 +12,7 @@ export default function NearbySpots({ location, allLocations, maxMiles = 50 }: N
   const nearby = nearbyLocations(location, allLocations, maxMiles);
 
   if (nearby.length === 0) {
-    return <p className="text-sm text-fog">No nearby spots within {maxMiles} miles yet.</p>;
+    return <p className="text-sm text-oregon-blue/50">No nearby spots within {maxMiles} miles yet.</p>;
   }
 
   return (

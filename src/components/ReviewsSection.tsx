@@ -9,7 +9,7 @@ export default function ReviewsSection({ locationId }: { locationId: string }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="font-semibold text-basalt">Reviews</h2>
+      <h2 className="font-semibold text-oregon-blue">Reviews</h2>
       <ReviewList locationId={locationId} refreshKey={refreshKey} />
       <ReviewForm locationId={locationId} onSubmitted={() => setRefreshKey((k) => k + 1)} />
     </div>

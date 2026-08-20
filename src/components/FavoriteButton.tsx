@@ -16,8 +16,8 @@ export default function FavoriteButton({ locationId }: FavoriteButtonProps) {
       onClick={() => toggleFavorite(locationId)}
       className={
         saved
-          ? "rounded-full bg-rust px-4 py-2 text-sm font-medium text-white"
-          : "rounded-full border border-rust px-4 py-2 text-sm font-medium text-rust"
+          ? "rounded-full bg-gold px-4 py-2 text-sm font-medium text-oregon-blue"
+          : "rounded-full border border-oregon-blue px-4 py-2 text-sm font-medium text-oregon-blue"
       }
     >
       {saved ? "Saved" : "Save"}

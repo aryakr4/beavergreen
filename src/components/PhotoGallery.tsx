@@ -17,7 +17,7 @@ export default function PhotoGallery({ photos, alt }: PhotoGalleryProps) {
   return (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
       {displayPhotos.map((src, i) => (
-        <div key={src + i} className="relative h-48 overflow-hidden rounded-lg bg-parchment">
+        <div key={src + i} className="relative h-48 overflow-hidden rounded-lg bg-oregon-blue/5">
           <Image
             src={failed[i] ? PLACEHOLDER : src}
             alt={`${alt} photo ${i + 1}`}

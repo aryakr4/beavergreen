@@ -17,9 +17,9 @@ export default function PassportStats({ locations }: PassportStatsProps) {
   const byCategory = countBy(locations, (loc) => loc.category);
 
   return (
-    <div className="rounded-lg border border-fog/30 bg-white p-4">
-      <p className="font-semibold text-basalt">{locations.length} spots saved</p>
-      <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm text-basalt/70">
+    <div className="rounded-lg border border-oregon-blue/15 bg-white p-4">
+      <p className="font-semibold text-oregon-blue">{locations.length} spots saved</p>
+      <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm text-oregon-blue/70">
         <div>
           {Object.entries(byState).map(([state, count]) => (
             <span key={state} className="mr-3">{state}: {count}</span>

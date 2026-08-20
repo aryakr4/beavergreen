@@ -41,19 +41,26 @@ export default function ReviewList({ locationId, refreshKey }: ReviewListProps) 
     };
   }, [locationId, refreshKey]);
 
-  if (error) return <p className="text-sm text-rust">{error}</p>;
-  if (reviews === null) return <p className="text-sm text-fog">Loading reviews…</p>;
-  if (reviews.length === 0) return <p className="text-sm text-fog">No reviews yet — be the first.</p>;
+  if (error) {
+    return (
+      <p className="rounded border border-gold bg-gold/20 px-3 py-2 text-sm text-oregon-blue">{error}</p>
+    );
+  }
+  if (reviews === null) return <p className="text-sm text-oregon-blue/50">Loading reviews…</p>;
+  if (reviews.length === 0) return <p className="text-sm text-oregon-blue/50">No reviews yet — be the first.</p>;
 
   return (
     <ul className="flex flex-col gap-3">
       {reviews.map((review) => (
-        <li key={review.id} className="rounded-lg border border-fog/30 bg-white p-3">
-          <p className="text-sm font-medium text-basalt">
-            {"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}
-            {review.authorName && <span className="ml-2 font-normal text-fog">by {review.authorName}</span>}
+        <li key={review.id} className="rounded-lg border border-oregon-blue/15 bg-white p-3">
+          <p className="text-sm font-medium text-oregon-blue">
+            <span className="text-gold">{"★".repeat(review.rating)}</span>
+            {"☆".repeat(5 - review.rating)}
+            {review.authorName && (
+              <span className="ml-2 font-normal text-oregon-blue/50">by {review.authorName}</span>
+            )}
           </p>
-          <p className="mt-1 text-basalt/80">{review.text}</p>
+          <p className="mt-1 text-oregon-blue/80">{review.text}</p>
         </li>
       ))}
     </ul>

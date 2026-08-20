@@ -24,8 +24,8 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
     <div className="flex flex-col gap-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-basalt">{location.name}</h1>
-          <p className="mt-1 text-basalt/70">
+          <h1 className="text-2xl font-bold text-oregon-blue">{location.name}</h1>
+          <p className="mt-1 text-oregon-blue/70">
             {location.state} &middot; {location.category} &middot; {location.difficulty}
           </p>
           {location.bestSeason && location.bestSeason.length > 0 && (
@@ -33,7 +33,7 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
               {location.bestSeason.map((season) => (
                 <span
                   key={season}
-                  className="rounded-full bg-moss/10 px-2.5 py-0.5 text-xs font-medium text-moss"
+                  className="rounded-full bg-washington-green/10 px-2.5 py-0.5 text-xs font-medium text-washington-green"
                 >
                   {season}
                 </span>
@@ -46,10 +46,10 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
 
       <PhotoGallery photos={location.photos} alt={location.name} />
 
-      <p className="text-basalt/90">{location.description}</p>
+      <p className="text-oregon-blue/90">{location.description}</p>
 
       {location.practicalInfo && (
-        <div className="rounded-lg border border-fog/30 bg-white p-4 text-sm text-basalt/70">
+        <div className="rounded-lg border border-oregon-blue/15 bg-white p-4 text-sm text-oregon-blue/70">
           {location.practicalInfo.parking && <p>Parking: {location.practicalInfo.parking}</p>}
           {location.practicalInfo.fee && <p>Fee: {location.practicalInfo.fee}</p>}
           {location.practicalInfo.dogFriendly != null && (
@@ -61,7 +61,7 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
       <DistanceInfo location={location} />
 
       <div>
-        <h2 className="mb-2 font-semibold text-basalt">Nearby spots</h2>
+        <h2 className="mb-2 font-semibold text-oregon-blue">Nearby spots</h2>
         <NearbySpots location={location} allLocations={allLocations} />
       </div>
 
