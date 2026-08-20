@@ -14,7 +14,7 @@ export interface LocationListProps {
 export default function LocationList({ locations, origin, selectedId, onSelect }: LocationListProps) {
   if (locations.length === 0) {
     return (
-      <p className="rounded-lg border border-dashed border-stone-300 p-6 text-center text-stone-500">
+      <p className="rounded-lg border border-dashed border-fog/50 p-6 text-center text-fog">
         No spots match your filters yet — try widening them.
       </p>
     );
@@ -26,7 +26,7 @@ export default function LocationList({ locations, origin, selectedId, onSelect }
         <div
           key={location.id}
           onMouseEnter={() => onSelect?.(location.id)}
-          className={selectedId === location.id ? "ring-2 ring-green-600 rounded-lg" : undefined}
+          className={selectedId === location.id ? "ring-2 ring-glacial rounded-lg" : undefined}
         >
           <LocationCard
             location={location}
