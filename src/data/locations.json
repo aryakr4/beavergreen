@@ -8,9 +8,19 @@
     "lat": 45.5762,
     "lng": -122.1158,
     "description": "Add your own notes about this spot here.",
-    "bestSeason": ["spring", "fall", "winter"],
-    "practicalInfo": { "parking": "Large lot off I-84, fills early on weekends", "fee": "Free", "dogFriendly": true },
-    "photos": ["/images/placeholder.svg"],
+    "bestSeason": [
+      "spring",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "Large lot off I-84, fills early on weekends",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
     "createdAt": "2026-08-19"
   },
   {
@@ -22,9 +32,18 @@
     "lat": 44.3675,
     "lng": -121.1401,
     "description": "Add your own notes about this spot here.",
-    "bestSeason": ["spring", "fall"],
-    "practicalInfo": { "parking": "Day-use fee lot", "fee": "$5 day-use", "dogFriendly": true },
-    "photos": ["/images/placeholder.svg"],
+    "bestSeason": [
+      "spring",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Day-use fee lot",
+      "fee": "$5 day-use",
+      "dogFriendly": true
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
     "createdAt": "2026-08-19"
   },
   {
@@ -36,9 +55,18 @@
     "lat": 48.7128,
     "lng": -121.0959,
     "description": "Add your own notes about this spot here.",
-    "bestSeason": ["summer", "fall"],
-    "practicalInfo": { "parking": "Roadside pullout", "fee": "Free", "dogFriendly": true },
-    "photos": ["/images/placeholder.svg"],
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Roadside pullout",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
     "createdAt": "2026-08-19"
   },
   {
@@ -50,9 +78,17 @@
     "lat": 47.7128,
     "lng": -124.4165,
     "description": "Add your own notes about this spot here.",
-    "bestSeason": ["summer"],
-    "practicalInfo": { "parking": "Small lot off Highway 101", "fee": "Olympic National Park pass", "dogFriendly": false },
-    "photos": ["/images/placeholder.svg"],
+    "bestSeason": [
+      "summer"
+    ],
+    "practicalInfo": {
+      "parking": "Small lot off Highway 101",
+      "fee": "Olympic National Park pass",
+      "dogFriendly": false
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
     "createdAt": "2026-08-19"
   },
   {
@@ -64,9 +100,1145 @@
     "lat": 44.9995,
     "lng": -122.2314,
     "description": "Add your own notes about this spot here.",
-    "bestSeason": ["fall", "winter", "spring"],
-    "practicalInfo": { "parking": "Trailhead lot", "fee": "$5 day-use", "dogFriendly": false },
-    "photos": ["/images/placeholder.svg"],
+    "bestSeason": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot",
+      "fee": "$5 day-use",
+      "dogFriendly": false
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
     "createdAt": "2026-08-19"
+  },
+  {
+    "id": "mount-pisgah",
+    "name": "Mount Pisgah",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "easy",
+    "lat": 43.9548,
+    "lng": -122.9781,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot at Buford Recreation Area",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mt._Pisgah_from_butte.JPG/1280px-Mt._Pisgah_from_butte.JPG"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "trestle-creek-falls",
+    "name": "Trestle Creek Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.6473,
+    "lng": -122.4324,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Small pullout off Hills Creek Reservoir road",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "/images/placeholder.svg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "spirit-falls",
+    "name": "Spirit Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.689,
+    "lng": -122.698,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Brice Creek trailhead lot",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Brice_Creek_near_Cottage_Grove_Robin_Marshburn_%2831257889950%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "sweet-creek-falls",
+    "name": "Sweet Creek Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.9524,
+    "lng": -123.8862,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot off Sweet Creek Road",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sweet_Creek_Falls%2C_Sweet_Creek_-_DPLA_-_e750ed7f407255f1372ee519fa86f322.jpg/1280px-Sweet_Creek_Falls%2C_Sweet_Creek_-_DPLA_-_e750ed7f407255f1372ee519fa86f322.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "cougar-hot-springs",
+    "name": "Terwilliger (Cougar) Hot Springs",
+    "state": "OR",
+    "category": "hot-spring",
+    "difficulty": "moderate",
+    "lat": 44.1361,
+    "lng": -122.2379,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "practicalInfo": {
+      "parking": "USFS day-use lot, fills early",
+      "fee": "$8 day-use",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Terwilliger_Hot_Springs_2016-04-04.JPG/1280px-Terwilliger_Hot_Springs_2016-04-04.JPG"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "belknap-hot-springs",
+    "name": "Belknap Hot Springs",
+    "state": "OR",
+    "category": "hot-spring",
+    "difficulty": "easy",
+    "lat": 44.2028,
+    "lng": -122.0132,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "practicalInfo": {
+      "parking": "Resort lot off Hwy 126",
+      "fee": "Resort day-use fee",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Belknap_Hot_Springs_-_Belknap_Springs_Oregon.jpg/1280px-Belknap_Hot_Springs_-_Belknap_Springs_Oregon.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "oregon-dunes",
+    "name": "Oregon Dunes",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.9057,
+    "lng": -124.1076,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "NRA day-use lots off Hwy 101",
+      "fee": "$5 day-use (NW Forest Pass)",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Oregon_Dunes_OR2.jpg/1280px-Oregon_Dunes_OR2.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "jessie-honeyman",
+    "name": "Jessie M. Honeyman State Park",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 43.9308,
+    "lng": -124.1104,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Large state park lot",
+      "fee": "Day-use fee",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Honeyman_Memorial_State_Park_and_Cleawox_Lake.JPG/1280px-Honeyman_Memorial_State_Park_and_Cleawox_Lake.JPG"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "diamond-creek-falls",
+    "name": "Diamond Creek Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "moderate",
+    "lat": 43.5928,
+    "lng": -122.0369,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Vivian Lake / Salt Creek trailhead",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Diamond_Creek_Falls_pic_1.jpg/1280px-Diamond_Creek_Falls_pic_1.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "clear-lake",
+    "name": "Clear Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 44.3717,
+    "lng": -121.9976,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Resort lot off Hwy 126",
+      "fee": "$5 day-use",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Clear_Lake_in_snow%2C_Oregon_-_Flickr_-_Bonnie_Moreland_%28free_images%29.jpg/1280px-Clear_Lake_in_snow%2C_Oregon_-_Flickr_-_Bonnie_Moreland_%28free_images%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "hobbit-beach",
+    "name": "Hobbit Beach",
+    "state": "OR",
+    "category": "beach",
+    "difficulty": "easy",
+    "lat": 44.2373,
+    "lng": -124.1187,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Pullout at Berry Creek trailhead, Hwy 101",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Hobbit_Beach%2C_Oregon.jpg/1280px-Hobbit_Beach%2C_Oregon.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "heceta-head",
+    "name": "Heceta Head",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "easy",
+    "lat": 44.1379,
+    "lng": -124.1276,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "State park lot off Hwy 101",
+      "fee": "Day-use fee",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Heceta_Head_Lighthouse_OR1.jpg/1280px-Heceta_Head_Lighthouse_OR1.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "thors-well",
+    "name": "Cape Perpetua / Thor's Well / Devil's Churn",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "moderate",
+    "lat": 44.2859,
+    "lng": -124.1136,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "Visitor center lot off Hwy 101",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/OREGON_-_Thor%27s_Well_Erupting_2024.jpg/1280px-OREGON_-_Thor%27s_Well_Erupting_2024.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "waldo-lake",
+    "name": "Waldo Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 43.7024,
+    "lng": -122.0499,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Boat ramp / day-use lots",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Waldo_Lake.jpg/1280px-Waldo_Lake.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "iron-mountain",
+    "name": "Iron Mountain",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "moderate",
+    "lat": 44.3958,
+    "lng": -122.1548,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Tombstone Pass trailhead, Hwy 20",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Iron_Mountain_Mark_Gorzynski_IMG_2294.jpg/1280px-Iron_Mountain_Mark_Gorzynski_IMG_2294.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "proxy-falls",
+    "name": "Proxy Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 44.1516,
+    "lng": -121.9328,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot off Hwy 242 (seasonal road)",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Proxy_Falls.JPG"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "dee-wright-observatory",
+    "name": "McKenzie Pass / Dee Wright Observatory",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "easy",
+    "lat": 44.2528,
+    "lng": -121.8058,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Observatory lot off Hwy 242 (seasonal road)",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/McKenzie_Pass-Santiam_Pass_Scenic_Byway_-_Touring_the_Trail_to_Dee_Wright_Observatory_in_Oregon_-_NARA_-_7720283.jpg/1280px-McKenzie_Pass-Santiam_Pass_Scenic_Byway_-_Touring_the_Trail_to_Dee_Wright_Observatory_in_Oregon_-_NARA_-_7720283.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "kentucky-falls",
+    "name": "Kentucky Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "moderate",
+    "lat": 43.8987,
+    "lng": -123.6923,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Gravel forest-road trailhead lot",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kentucky_Falls_%28222888329%29.jpeg/1280px-Kentucky_Falls_%28222888329%29.jpeg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "john-dellenback-dunes",
+    "name": "John Dellenback Dunes",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.6423,
+    "lng": -124.1587,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "NRA trailhead lot off Hwy 101",
+      "fee": "$5 day-use (NW Forest Pass)",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dunes_to_the_sky_-_Flickr_-_docoverachiever.jpg/1280px-Dunes_to_the_sky_-_Flickr_-_docoverachiever.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "drift-creek-falls",
+    "name": "Drift Creek Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 44.9319,
+    "lng": -123.8814,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "USFS trailhead lot",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/53/Drift_Creek_Bridge%2C_Spanning_Drift_Creek_on_Drift_Creek_County_Road%2C_Lincoln_City_vicinity_%28Lincoln_County%2C_Oregon%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "watson-falls",
+    "name": "Watson Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.2478,
+    "lng": -122.2494,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot off Hwy 138",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Watson_Falls%2C_Oregon.jpg/1280px-Watson_Falls%2C_Oregon.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "clearwater-falls",
+    "name": "Clearwater Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.2723,
+    "lng": -122.2081,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Roadside picnic area off Hwy 138",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Clearwater_falls_from_a_side_view.jpg/1280px-Clearwater_falls_from_a_side_view.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "whitehorse-falls",
+    "name": "Whitehorse Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.2837,
+    "lng": -122.1848,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Small campground pullout off Hwy 138",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Whitehorse_Falls%2C_Cascade_Mountains%2C_Highways_138_-_DPLA_-_58967e351b84e15125d749d262d91b8d.jpg/1280px-Whitehorse_Falls%2C_Cascade_Mountains%2C_Highways_138_-_DPLA_-_58967e351b84e15125d749d262d91b8d.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "umpqua-hot-springs",
+    "name": "Umpqua Hot Springs",
+    "state": "OR",
+    "category": "hot-spring",
+    "difficulty": "moderate",
+    "lat": 43.2977,
+    "lng": -122.2011,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot off Forest Road 34",
+      "fee": "NW Forest Pass",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Umpqua_Hot_Springs_1_-_panoramio.jpg/1280px-Umpqua_Hot_Springs_1_-_panoramio.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "golden-silver-falls",
+    "name": "Golden & Silver Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "moderate",
+    "lat": 43.4302,
+    "lng": -124.0088,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "State natural area lot",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Golden_and_Silver_Falls_State_Natural_Area.jpg/1280px-Golden_and_Silver_Falls_State_Natural_Area.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "shore-acres",
+    "name": "Shore Acres / Cape Arago / Sunset Bay",
+    "state": "OR",
+    "category": "beach",
+    "difficulty": "easy",
+    "lat": 43.3335,
+    "lng": -124.3971,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "State park lot",
+      "fee": "Day-use fee",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Garden_at_Shore_Acres_State_Park.jpg/1280px-Garden_at_Shore_Acres_State_Park.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "cape-kiwanda",
+    "name": "Cape Kiwanda",
+    "state": "OR",
+    "category": "beach",
+    "difficulty": "easy",
+    "lat": 45.2185,
+    "lng": -123.9748,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Beachside public lot in Pacific City",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/OREGON-CAPE_KIWANDA_-_NARA_-_545007.jpg/1280px-OREGON-CAPE_KIWANDA_-_NARA_-_545007.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "boyd-cave",
+    "name": "Boyd Cave",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.8674,
+    "lng": -121.2136,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Gravel pullout off China Hat Road",
+      "fee": "NW Forest Pass",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Skeleton_Cave_near_Bend%2C_Oregon.jpg/1280px-Skeleton_Cave_near_Bend%2C_Oregon.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "lemolo-falls",
+    "name": "Lemolo Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "moderate",
+    "lat": 43.3444,
+    "lng": -122.2467,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead off Lemolo Lake road",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lemolo_Falls%2C_John_Link_%2850573532981%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "grotto-falls",
+    "name": "Grotto Falls",
+    "state": "OR",
+    "category": "waterfall",
+    "difficulty": "easy",
+    "lat": 43.2593,
+    "lng": -122.2192,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Roadside pullout off Hwy 138",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Grotto_Falls%2C_Umpqua_National_Forest_%2838706867535%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "sparks-lake",
+    "name": "Sparks Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 44.0281,
+    "lng": -121.7676,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Lakeside lot off Cascade Lakes Hwy (seasonal)",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/80/Sparks_Lake_%28Deschutes_County%2C_Oregon_scenic_images%29_%28desDB3295%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "three-creek-lake",
+    "name": "Three Creek Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 44.0716,
+    "lng": -121.5548,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Campground / day-use lot",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Three_Creek_Lake%2C_Oregon_-_Flickr_-_Bonnie_Moreland_%28free_images%29.jpg/1280px-Three_Creek_Lake%2C_Oregon_-_Flickr_-_Bonnie_Moreland_%28free_images%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "lava-river-cave",
+    "name": "Lava River Cave",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.9138,
+    "lng": -121.3661,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Visitor center lot off Hwy 97",
+      "fee": "Fee + rental lantern",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lava_river_cave_passage_2.jpg/1280px-Lava_river_cave_passage_2.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "lava-butte",
+    "name": "Lava Butte",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "easy",
+    "lat": 43.9153,
+    "lng": -121.3564,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Newberry Monument entrance lot",
+      "fee": "Newberry day pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Lava_Butte_road_OR1.jpg/1280px-Lava_Butte_road_OR1.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "big-obsidian-flow",
+    "name": "Big Obsidian Flow",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.7168,
+    "lng": -121.2276,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Trailhead lot inside Newberry Monument",
+      "fee": "Newberry day pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/35/A468%2C_Newberry_National_Volcanic_Monument%2C_Oregon%2C_USA%2C_Big_Obsidian_Flow%2C_detail_of_cracked_obsidian%2C_2016.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "paulina-peak",
+    "name": "Paulina Peak",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "moderate",
+    "lat": 43.696,
+    "lng": -121.256,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Summit gravel-road lot (seasonal)",
+      "fee": "Newberry day pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Paulina_Peak_View_%28Deschutes_County%2C_Oregon_scenic_images%29_%28desDA0066%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "newberry-volcanic-monument",
+    "name": "Newberry National Volcanic Monument",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.722,
+    "lng": -121.259,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Multiple lots throughout the monument",
+      "fee": "Newberry day pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Newberry_National_Volcanic_Monument%2C_OR.jpg/1280px-Newberry_National_Volcanic_Monument%2C_OR.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "crater-lake",
+    "name": "Crater Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 42.9446,
+    "lng": -122.109,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "practicalInfo": {
+      "parking": "Rim Village lot",
+      "fee": "National park entrance fee",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/1280px-Crater_Lake_winter_pano2.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "todd-lake",
+    "name": "Todd Lake",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 44.0089,
+    "lng": -121.6773,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Small walk-in trailhead lot",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Todd_Lake_%28Oregon%29_%28174699955%29.jpg/1280px-Todd_Lake_%28Oregon%29_%28174699955%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "devils-lake-bend",
+    "name": "Devil's Lake (Bend)",
+    "state": "OR",
+    "category": "lake",
+    "difficulty": "easy",
+    "lat": 43.9989,
+    "lng": -121.7423,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Roadside lot off Cascade Lakes Hwy (seasonal)",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Devils_Lake%2C_Cascade_Lakes_Highway%2C_Cascade_Mountains_-_DPLA_-_2af096f9299cc2a277a9c1ed72a5ca6b.jpg/1280px-Devils_Lake%2C_Cascade_Lakes_Highway%2C_Cascade_Mountains_-_DPLA_-_2af096f9299cc2a277a9c1ed72a5ca6b.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "south-sister",
+    "name": "South Sister",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "hard",
+    "lat": 44.1034,
+    "lng": -121.769,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Devils Lake trailhead lot",
+      "fee": "NW Forest Pass + climbing permit",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/View_of_South_Sister_and_Broken_Top_from_the_Cascade_Lakes_National_Scenic_Byway_near_the_bottom_of_Mount_Bachelor%2C_2011.jpg/1280px-View_of_South_Sister_and_Broken_Top_from_the_Cascade_Lakes_National_Scenic_Byway_near_the_bottom_of_Mount_Bachelor%2C_2011.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "broken-top",
+    "name": "Broken Top / No Name Lake",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "hard",
+    "lat": 44.0806,
+    "lng": -121.6871,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Todd Lake / Tam McArthur trailheads",
+      "fee": "NW Forest Pass",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Broken_Top.JPG/1280px-Broken_Top.JPG"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "tam-mcarthur-rim",
+    "name": "Tam McArthur Rim",
+    "state": "OR",
+    "category": "hike",
+    "difficulty": "moderate",
+    "lat": 44.1268,
+    "lng": -121.6304,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Three Creek Lake trailhead lot",
+      "fee": "NW Forest Pass",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tam_McArthur_Rim_Mark_Gorzynski_IMG_7232.jpg/1280px-Tam_McArthur_Rim_Mark_Gorzynski_IMG_7232.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "hug-point",
+    "name": "Hug Point",
+    "state": "OR",
+    "category": "beach",
+    "difficulty": "easy",
+    "lat": 45.7767,
+    "lng": -123.9509,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "State recreation site lot off Hwy 101",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Hug_Point_October_2019_001.jpg/1280px-Hug_Point_October_2019_001.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "valley-of-the-giants",
+    "name": "Valley of the Giants",
+    "state": "OR",
+    "category": "forest",
+    "difficulty": "moderate",
+    "lat": 45.033,
+    "lng": -123.6142,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Remote gravel-road trailhead lot",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Valley_of_the_Giants_%2849839181282%29.jpg/1280px-Valley_of_the_Giants_%2849839181282%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "crack-in-the-ground",
+    "name": "Crack-in-the-Ground",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 43.3541,
+    "lng": -121.0459,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Gravel lot off Fossil Lake Road",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Crack_in_the_Ground_%2833858509505%29.jpg/1280px-Crack_in_the_Ground_%2833858509505%29.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "boardman-corridor",
+    "name": "Samuel H. Boardman Scenic Corridor",
+    "state": "OR",
+    "category": "viewpoint",
+    "difficulty": "easy",
+    "lat": 42.1462,
+    "lng": -124.3768,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Multiple pullouts off Hwy 101",
+      "fee": "Free",
+      "dogFriendly": true
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Samuel_H._Boardman_State_Scenic_Corridor_-_Oregon_-_7405365820.jpg/1280px-Samuel_H._Boardman_State_Scenic_Corridor_-_Oregon_-_7405365820.jpg"
+    ],
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": "oregon-caves",
+    "name": "Oregon Caves",
+    "state": "OR",
+    "category": "other",
+    "difficulty": "moderate",
+    "lat": 42.0967,
+    "lng": -123.4058,
+    "description": "Add your own notes about this spot here.",
+    "bestSeason": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "practicalInfo": {
+      "parking": "Chateau lot, guided tours required",
+      "fee": "Tour fee",
+      "dogFriendly": false
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Oregon_Caves_Chateau_OR1.jpg/1280px-Oregon_Caves_Chateau_OR1.jpg"
+    ],
+    "createdAt": "2026-08-25"
   }
 ]

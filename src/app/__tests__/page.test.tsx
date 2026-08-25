@@ -8,6 +8,7 @@ vi.mock("@/components/Map", () => ({
 }));
 
 import Home from "@/app/page";
+import { getAllLocations } from "@/data/locations";
 
 describe("Home page", () => {
   it("renders every seed location by default", () => {
@@ -21,6 +22,6 @@ describe("Home page", () => {
 
     const map = screen.getByTestId("map");
     expect(Number(map.dataset.count)).toBeGreaterThan(0);
-    expect(Number(map.dataset.count)).toBeLessThan(5);
+    expect(Number(map.dataset.count)).toBeLessThan(getAllLocations().length);
   });
 });
