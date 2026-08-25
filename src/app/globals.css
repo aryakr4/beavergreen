@@ -18,6 +18,13 @@
   --color-steel-light: #e3e9ee;
   --color-steel: #aebac6;
   --color-steel-dark: #5b6a78;
+  /* Difficulty badges: easy/moderate/hard traffic-light scale */
+  --color-amber: #e0a100;
+  --color-amber-light: #ffcf4d;
+  --color-amber-dark: #a66d00;
+  --color-red: #c62828;
+  --color-red-light: #e57373;
+  --color-red-dark: #8e1c1c;
 }
 
 :root {

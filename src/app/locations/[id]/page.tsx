@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllLocations, getLocationById } from "@/data/locations";
+import { difficultyBadgeClass } from "@/lib/difficultyStyle";
 import PhotoGallery from "@/components/PhotoGallery";
 import DistanceInfo from "@/components/DistanceInfo";
 import NearbySpots from "@/components/NearbySpots";
@@ -32,7 +33,7 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
             <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
               {location.category}
             </span>
-            <span className="bevel-raised rounded border border-washington-green-dark bg-gradient-to-b from-washington-green-light to-washington-green px-1.5 py-0.5 text-white">
+            <span className={`bevel-raised rounded border px-1.5 py-0.5 ${difficultyBadgeClass(location.difficulty)}`}>
               {location.difficulty}
             </span>
           </div>

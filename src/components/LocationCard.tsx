@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { formatDrivingTime } from "@/lib/distance";
+import { difficultyBadgeClass } from "@/lib/difficultyStyle";
 import type { Location } from "@/lib/types";
 
 export interface LocationCardProps {
@@ -44,7 +45,7 @@ export default function LocationCard({ location, distanceMiles }: LocationCardPr
           <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
             {location.category}
           </span>
-          <span className="bevel-raised rounded border border-washington-green-dark bg-gradient-to-b from-washington-green-light to-washington-green px-1.5 py-0.5 text-white">
+          <span className={`bevel-raised rounded border px-1.5 py-0.5 ${difficultyBadgeClass(location.difficulty)}`}>
             {location.difficulty}
           </span>
         </div>
