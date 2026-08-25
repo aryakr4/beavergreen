@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bungee } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import BackgroundTexture from "@/components/BackgroundTexture";
 import "./globals.css";
 
 const logoFont = Bungee({ subsets: ["latin"], weight: "400" });
@@ -44,7 +45,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-steel-light text-oregon-blue antialiased">
-        <header className="gloss-sheen bevel-raised bg-gradient-to-b from-washington-green-light via-washington-green to-washington-green-dark">
+        <BackgroundTexture />
+        <header className="relative z-10 gloss-sheen bevel-raised bg-gradient-to-b from-washington-green-light via-washington-green to-washington-green-dark">
           <div className="relative z-[2] mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
             <Link
               href="/"
@@ -67,7 +69,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="mx-auto max-w-6xl px-4 py-6">{children}</main>
+        <main className="relative z-10 mx-auto max-w-6xl px-4 py-6">{children}</main>
       </body>
     </html>
   );
