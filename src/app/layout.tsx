@@ -64,12 +64,6 @@ export default function RootLayout({
               >
                 Explore
               </Link>
-              <Link
-                href="/passport"
-                className="bevel-raised rounded border border-oregon-blue-dark/40 bg-gradient-to-b from-oregon-blue-light to-oregon-blue-dark px-3 py-1.5 text-gold-light transition hover:from-oregon-blue hover:to-oregon-blue-dark"
-              >
-                Passport
-              </Link>
             </nav>
           </div>
         </header>
