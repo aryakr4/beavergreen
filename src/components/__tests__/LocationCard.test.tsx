@@ -17,14 +17,14 @@ describe("LocationCard", () => {
     expect(screen.getByText(/waterfall/i)).toBeInTheDocument();
   });
 
-  it("shows the distance when provided", () => {
+  it("shows the estimated drive time when a distance is provided", () => {
     render(<LocationCard location={location} distanceMiles={12.345} />);
-    expect(screen.getByText(/12(\.3)? mi/i)).toBeInTheDocument();
+    expect(screen.getByText(/min drive/i)).toBeInTheDocument();
   });
 
-  it("omits distance text when not provided", () => {
+  it("omits drive time text when not provided", () => {
     render(<LocationCard location={location} />);
-    expect(screen.queryByText(/mi away/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/drive/i)).not.toBeInTheDocument();
   });
 
   it("swaps to the placeholder if the photo fails to load", () => {

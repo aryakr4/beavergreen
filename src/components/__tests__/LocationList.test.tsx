@@ -20,8 +20,8 @@ describe("LocationList", () => {
     expect(screen.getByText(/no spots match/i)).toBeInTheDocument();
   });
 
-  it("shows distance from the origin when provided", () => {
+  it("shows drive time from the origin when provided", () => {
     render(<LocationList locations={locations} origin={{ lat: 45.5, lng: -122.5 }} />);
-    expect(screen.getByText(/0\.0 mi away/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/drive$/i).length).toBeGreaterThan(0);
   });
 });

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { formatDrivingTime } from "@/lib/distance";
 import type { Location } from "@/lib/types";
 
 export interface LocationCardProps {
@@ -30,7 +31,7 @@ export default function LocationCard({ location, distanceMiles }: LocationCardPr
         />
         {distanceMiles != null && (
           <span className="bevel-raised absolute right-2 top-2 z-[2] rounded-full border border-gold-dark bg-gradient-to-b from-gold-light via-gold to-gold-dark px-2.5 py-1 text-xs font-bold text-oregon-blue-dark">
-            {distanceMiles.toFixed(1)} mi away
+            {formatDrivingTime(distanceMiles)} drive
           </span>
         )}
       </div>

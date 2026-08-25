@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { haversineDistanceMiles, distanceToMajorCities, nearbyLocations } from "@/lib/distance";
+import { haversineDistanceMiles, distanceToMajorCities, formatDrivingTime, nearbyLocations } from "@/lib/distance";
 import type { Location } from "@/lib/types";
 
 const portland = { lat: 45.5152, lng: -122.6784 };
@@ -28,6 +28,24 @@ describe("haversineDistanceMiles", () => {
     const miles = haversineDistanceMiles(portland, seattle);
     expect(miles).toBeGreaterThan(140);
     expect(miles).toBeLessThan(150);
+  });
+});
+
+describe("formatDrivingTime", () => {
+  it("floors very short distances to a 5-minute minimum", () => {
+    expect(formatDrivingTime(0)).toBe("~5 min");
+  });
+
+  it("formats sub-hour distances in minutes", () => {
+    expect(formatDrivingTime(12.345)).toBe("~20 min");
+  });
+
+  it("formats hour-plus distances with hours and minutes", () => {
+    expect(formatDrivingTime(70)).toBe("~2 hr");
+  });
+
+  it("includes leftover minutes past a whole hour", () => {
+    expect(formatDrivingTime(80)).toBe("~2 hr 15 min");
   });
 });
 

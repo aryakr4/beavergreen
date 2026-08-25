@@ -30,9 +30,9 @@ describe("DistanceInfo", () => {
     };
   });
 
-  it("shows distance from the visitor when geolocation succeeds", () => {
+  it("shows drive time from the visitor when geolocation succeeds", () => {
     render(<DistanceInfo location={location} />);
-    expect(screen.getByText(/mi from you/i)).toBeInTheDocument();
+    expect(screen.getByText(/drive from you/i)).toBeInTheDocument();
   });
 
   it("lists distances to major cities", () => {
@@ -49,6 +49,6 @@ describe("DistanceInfo", () => {
     };
     render(<DistanceInfo location={location} />);
     expect(screen.getByText(/enable location access/i)).toBeInTheDocument();
-    expect(screen.queryByText(/mi from you/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/drive from you/i)).not.toBeInTheDocument();
   });
 });

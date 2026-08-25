@@ -1,6 +1,6 @@
 "use client";
 
-import { distanceToMajorCities, haversineDistanceMiles } from "@/lib/distance";
+import { distanceToMajorCities, formatDrivingTime, haversineDistanceMiles } from "@/lib/distance";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import type { Location } from "@/lib/types";
 
@@ -17,7 +17,7 @@ export default function DistanceInfo({ location }: DistanceInfoProps) {
       <h2 className="text-emboss font-semibold text-oregon-blue-dark">Distance</h2>
       {coords ? (
         <p className="bevel-inset mt-2 inline-block rounded border border-washington-green-dark bg-gradient-to-b from-washington-green-light to-washington-green px-2.5 py-1 text-sm font-bold text-white">
-          {haversineDistanceMiles(coords, location).toFixed(1)} mi from you
+          {formatDrivingTime(haversineDistanceMiles(coords, location))} drive from you
         </p>
       ) : (
         <p className="mt-1 text-sm text-oregon-blue/50">{error ?? "Locating…"}</p>
@@ -26,7 +26,7 @@ export default function DistanceInfo({ location }: DistanceInfoProps) {
         {cities.map(({ city, miles }) => (
           <li key={city.name} className="flex justify-between border-b border-steel/60 py-0.5 last:border-0">
             <span>{city.name}, {city.state}</span>
-            <span className="font-bold text-oregon-blue-dark">{miles.toFixed(0)} mi</span>
+            <span className="font-bold text-oregon-blue-dark">{formatDrivingTime(miles)} drive</span>
           </li>
         ))}
       </ul>

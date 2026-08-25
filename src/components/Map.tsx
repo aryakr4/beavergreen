@@ -29,7 +29,7 @@ function FitBounds({ locations }: { locations: Location[] }) {
   useEffect(() => {
     if (locations.length === 0) return;
     const bounds = L.latLngBounds(locations.map((loc) => [loc.lat, loc.lng]));
-    map.fitBounds(bounds, { padding: [32, 32] });
+    map.fitBounds(bounds, { padding: [32, 32], maxZoom: 12 });
   }, [locations, map]);
   return null;
 }

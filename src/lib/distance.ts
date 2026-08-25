@@ -7,6 +7,19 @@ function toRadians(degrees: number): number {
   return (degrees * Math.PI) / 180;
 }
 
+// Rough blended highway/backroad speed for estimating drive time from
+// straight-line distance — there's no routing API wired in, so this is an
+// approximation, not turn-by-turn.
+const ASSUMED_AVG_SPEED_MPH = 35;
+
+export function formatDrivingTime(miles: number): string {
+  const minutes = Math.max(5, Math.round((miles / ASSUMED_AVG_SPEED_MPH) * 60 / 5) * 5);
+  if (minutes < 60) return `~${minutes} min`;
+  const hrs = Math.floor(minutes / 60);
+  const mins = minutes % 60;
+  return mins === 0 ? `~${hrs} hr` : `~${hrs} hr ${mins} min`;
+}
+
 export function haversineDistanceMiles(a: Coordinates, b: Coordinates): number {
   const dLat = toRadians(b.lat - a.lat);
   const dLng = toRadians(b.lng - a.lng);
