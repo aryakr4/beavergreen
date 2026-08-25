@@ -24,16 +24,24 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
     <div className="flex flex-col gap-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-oregon-blue">{location.name}</h1>
-          <p className="mt-1 text-oregon-blue/70">
-            {location.state} &middot; {location.category} &middot; {location.difficulty}
-          </p>
+          <h1 className="text-emboss text-2xl font-bold tracking-tight text-oregon-blue-dark">{location.name}</h1>
+          <div className="mt-1.5 flex flex-wrap gap-1.5 text-xs font-medium">
+            <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
+              {location.state}
+            </span>
+            <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
+              {location.category}
+            </span>
+            <span className="bevel-raised rounded border border-washington-green-dark bg-gradient-to-b from-washington-green-light to-washington-green px-1.5 py-0.5 text-white">
+              {location.difficulty}
+            </span>
+          </div>
           {location.bestSeason && location.bestSeason.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
               {location.bestSeason.map((season) => (
                 <span
                   key={season}
-                  className="rounded-full bg-washington-green/10 px-2.5 py-0.5 text-xs font-medium text-washington-green"
+                  className="bevel-raised rounded-full border border-gold-dark bg-gradient-to-b from-gold-light to-gold px-2.5 py-0.5 text-xs font-bold text-oregon-blue-dark"
                 >
                   {season}
                 </span>
@@ -46,10 +54,10 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
 
       <PhotoGallery photos={location.photos} alt={location.name} />
 
-      <p className="text-oregon-blue/90">{location.description}</p>
+      <p className="text-oregon-blue-dark/90">{location.description}</p>
 
       {location.practicalInfo && (
-        <div className="rounded-lg border border-oregon-blue/15 bg-white p-4 text-sm text-oregon-blue/70">
+        <div className="bevel-panel rounded-lg border border-steel bg-gradient-to-b from-steel-light to-white p-4 text-sm text-oregon-blue-dark/80">
           {location.practicalInfo.parking && <p>Parking: {location.practicalInfo.parking}</p>}
           {location.practicalInfo.fee && <p>Fee: {location.practicalInfo.fee}</p>}
           {location.practicalInfo.dogFriendly != null && (
@@ -61,7 +69,7 @@ export default async function LocationPage({ params }: { params: Promise<{ id: s
       <DistanceInfo location={location} />
 
       <div>
-        <h2 className="mb-2 font-semibold text-oregon-blue">Nearby spots</h2>
+        <h2 className="text-emboss mb-2 font-semibold text-oregon-blue-dark">Nearby spots</h2>
         <NearbySpots location={location} allLocations={allLocations} />
       </div>
 

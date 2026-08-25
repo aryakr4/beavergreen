@@ -16,8 +16,8 @@ export default function FavoriteButton({ locationId }: FavoriteButtonProps) {
       onClick={() => toggleFavorite(locationId)}
       className={
         saved
-          ? "rounded-full bg-gold px-4 py-2 text-sm font-medium text-oregon-blue"
-          : "rounded-full border border-oregon-blue px-4 py-2 text-sm font-medium text-oregon-blue"
+          ? "bevel-raised rounded-full border border-gold-dark bg-gradient-to-b from-gold-light via-gold to-gold-dark px-4 py-2 text-sm font-bold text-oregon-blue-dark"
+          : "bevel-raised rounded-full border border-oregon-blue-dark bg-gradient-to-b from-oregon-blue-light to-oregon-blue-dark px-4 py-2 text-sm font-bold text-gold-light"
       }
     >
       {saved ? "Saved" : "Save"}

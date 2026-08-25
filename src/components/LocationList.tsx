@@ -14,7 +14,7 @@ export interface LocationListProps {
 export default function LocationList({ locations, origin, selectedId, onSelect }: LocationListProps) {
   if (locations.length === 0) {
     return (
-      <p className="rounded-lg border border-dashed border-oregon-blue/25 p-6 text-center text-oregon-blue/50">
+      <p className="bevel-inset rounded-lg border border-dashed border-steel-dark bg-steel-light/50 p-6 text-center text-oregon-blue-dark/50">
         No spots match your filters yet — try widening them.
       </p>
     );

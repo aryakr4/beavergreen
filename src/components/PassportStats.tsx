@@ -17,19 +17,27 @@ export default function PassportStats({ locations }: PassportStatsProps) {
   const byCategory = countBy(locations, (loc) => loc.category);
 
   return (
-    <div className="rounded-lg border border-oregon-blue/15 bg-white p-4">
-      <p className="font-semibold text-oregon-blue">{locations.length} spots saved</p>
-      <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm text-oregon-blue/70">
-        <div>
-          {Object.entries(byState).map(([state, count]) => (
-            <span key={state} className="mr-3">{state}: {count}</span>
-          ))}
-        </div>
-        <div>
-          {Object.entries(byCategory).map(([category, count]) => (
-            <span key={category} className="mr-3">{category}: {count}</span>
-          ))}
-        </div>
+    <div className="bevel-panel gloss-sheen overflow-hidden rounded-lg border border-oregon-blue-dark bg-gradient-to-b from-oregon-blue-light via-oregon-blue to-oregon-blue-dark p-4">
+      <p className="relative z-[2] text-emboss text-lg font-bold text-gold">
+        {locations.length} spots saved
+      </p>
+      <div className="relative z-[2] mt-3 flex flex-wrap gap-2 text-sm font-bold">
+        {Object.entries(byState).map(([state, count]) => (
+          <span
+            key={state}
+            className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-2 py-1 text-oregon-blue-dark"
+          >
+            {state}: {count}
+          </span>
+        ))}
+        {Object.entries(byCategory).map(([category, count]) => (
+          <span
+            key={category}
+            className="bevel-raised rounded border border-gold-dark bg-gradient-to-b from-gold-light to-gold px-2 py-1 text-oregon-blue-dark"
+          >
+            {category}: {count}
+          </span>
+        ))}
       </div>
     </div>
   );

@@ -27,15 +27,18 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
     update({ [key]: e.target.value || undefined } as Partial<LocationFilters>);
   };
 
+  const selectClass =
+    "bevel-inset mt-1 rounded border border-steel-dark bg-white px-2 py-1 text-oregon-blue-dark";
+
   return (
-    <div className="flex flex-wrap gap-4 rounded-lg border border-oregon-blue/15 bg-white p-4">
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+    <div className="bevel-panel flex flex-wrap gap-4 rounded-lg border border-steel bg-gradient-to-b from-steel-light to-white p-4">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Category
         <select
           aria-label="Category"
           value={filters.category ?? ""}
           onChange={handleSelect("category")}
-          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
+          className={selectClass}
         >
           <option value="">Any</option>
           {CATEGORIES.map((c) => (
@@ -44,13 +47,13 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         State
         <select
           aria-label="State"
           value={filters.state ?? ""}
           onChange={handleSelect("state")}
-          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
+          className={selectClass}
         >
           <option value="">Any</option>
           {STATES.map((s) => (
@@ -59,13 +62,13 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Difficulty
         <select
           aria-label="Difficulty"
           value={filters.difficulty ?? ""}
           onChange={handleSelect("difficulty")}
-          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
+          className={selectClass}
         >
           <option value="">Any</option>
           {DIFFICULTIES.map((d) => (
@@ -74,7 +77,7 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Max distance (miles)
         <input
           aria-label="Max distance"
@@ -85,7 +88,7 @@ export default function FilterBar({ filters, onChange, disabled }: FilterBarProp
           onChange={(e) =>
             update({ maxDistanceMiles: e.target.value ? Number(e.target.value) : undefined })
           }
-          className="mt-1 w-28 rounded border border-oregon-blue/25 px-2 py-1 disabled:cursor-not-allowed disabled:bg-oregon-blue/5 disabled:text-oregon-blue/40"
+          className="bevel-inset mt-1 w-28 rounded border border-steel-dark bg-white px-2 py-1 text-oregon-blue-dark disabled:cursor-not-allowed disabled:bg-steel-light disabled:text-oregon-blue/40"
         />
       </label>
     </div>

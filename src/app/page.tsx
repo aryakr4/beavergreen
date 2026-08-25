@@ -24,8 +24,10 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-oregon-blue">Where should you go this weekend?</h1>
-        <p className="mt-1 text-oregon-blue/70">
+        <h1 className="text-emboss text-2xl font-bold tracking-tight text-oregon-blue-dark">
+          Where should you go this weekend?
+        </h1>
+        <p className="mt-1 text-oregon-blue-dark/70">
           Hand-picked spots across Oregon and Washington — pictures, notes, and how far they are from you.
         </p>
         {geoError && <p className="mt-1 text-sm text-oregon-blue/50">{geoError}</p>}
@@ -40,8 +42,10 @@ export default function Home() {
         )}
       </div>
 
-      <div className="h-96 overflow-hidden rounded-lg border border-oregon-blue/15">
-        <LocationMap locations={filtered} selectedId={selectedId} onSelect={setSelectedId} origin={coords} />
+      <div className="bevel-raised h-96 rounded-lg border border-steel-dark bg-gradient-to-b from-steel to-steel-dark p-1">
+        <div className="h-full w-full overflow-hidden rounded-md border border-steel-light">
+          <LocationMap locations={filtered} selectedId={selectedId} onSelect={setSelectedId} origin={coords} />
+        </div>
       </div>
 
       <LocationList locations={filtered} origin={coords} selectedId={selectedId} onSelect={setSelectedId} />

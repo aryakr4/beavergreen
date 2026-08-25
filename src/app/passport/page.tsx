@@ -14,12 +14,12 @@ export default function PassportPage() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-oregon-blue">Your Passport</h1>
-        <p className="mt-1 text-oregon-blue/70">Spots you&apos;ve saved to explore.</p>
+        <h1 className="text-emboss text-2xl font-bold tracking-tight text-oregon-blue-dark">Your Passport</h1>
+        <p className="mt-1 text-oregon-blue-dark/70">Spots you&apos;ve saved to explore.</p>
       </div>
 
       {favorites.length === 0 ? (
-        <p className="rounded-lg border border-dashed border-oregon-blue/25 p-6 text-center text-oregon-blue/50">
+        <p className="bevel-inset rounded-lg border border-dashed border-steel-dark bg-steel-light/50 p-6 text-center text-oregon-blue-dark/50">
           You haven&apos;t saved any spots yet — browse the map and hit Save on ones you like.
         </p>
       ) : (

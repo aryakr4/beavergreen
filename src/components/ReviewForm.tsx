@@ -43,15 +43,20 @@ export default function ReviewForm({ locationId, onSubmitted }: ReviewFormProps)
     }
   };
 
+  const fieldClass = "bevel-inset mt-1 rounded border border-steel-dark bg-white px-2 py-1 text-oregon-blue-dark";
+
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 rounded-lg border border-oregon-blue/15 bg-white p-4">
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+    <form
+      onSubmit={handleSubmit}
+      className="bevel-panel flex flex-col gap-3 rounded-lg border border-steel bg-gradient-to-b from-steel-light to-white p-4"
+    >
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Rating
         <select
           aria-label="Rating"
           value={rating}
           onChange={(e) => setRating(Number(e.target.value))}
-          className="mt-1 w-24 rounded border border-oregon-blue/25 px-2 py-1"
+          className={`${fieldClass} w-24`}
         >
           {[5, 4, 3, 2, 1].map((n) => (
             <option key={n} value={n}>{n}</option>
@@ -59,25 +64,25 @@ export default function ReviewForm({ locationId, onSubmitted }: ReviewFormProps)
         </select>
       </label>
 
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Your review
         <textarea
           aria-label="Your review"
           value={text}
           onChange={(e) => setText(e.target.value)}
           required
-          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
+          className={fieldClass}
           rows={3}
         />
       </label>
 
-      <label className="flex flex-col text-sm text-oregon-blue/80">
+      <label className="flex flex-col text-sm font-medium text-oregon-blue-dark/80">
         Name (optional)
         <input
           aria-label="Name"
           value={authorName}
           onChange={(e) => setAuthorName(e.target.value)}
-          className="mt-1 rounded border border-oregon-blue/25 px-2 py-1"
+          className={fieldClass}
         />
       </label>
 
@@ -92,13 +97,15 @@ export default function ReviewForm({ locationId, onSubmitted }: ReviewFormProps)
       />
 
       {error && (
-        <p className="rounded border border-gold bg-gold/20 px-3 py-2 text-sm text-oregon-blue">{error}</p>
+        <p className="bevel-inset rounded border border-gold-dark bg-gold/20 px-3 py-2 text-sm text-oregon-blue-dark">
+          {error}
+        </p>
       )}
 
       <button
         type="submit"
         disabled={submitting}
-        className="self-start rounded-full bg-washington-green px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+        className="bevel-raised self-start rounded-full border border-washington-green-dark bg-gradient-to-b from-washington-green-light via-washington-green to-washington-green-dark px-4 py-2 text-sm font-bold text-white disabled:opacity-50"
       >
         Submit review
       </button>

@@ -18,9 +18,9 @@ export default function LocationCard({ location, distanceMiles }: LocationCardPr
   return (
     <Link
       href={`/locations/${location.id}`}
-      className="block overflow-hidden rounded-lg border border-oregon-blue/15 bg-white transition hover:shadow-md"
+      className="card-glint bevel-panel block overflow-hidden rounded-lg border border-steel bg-gradient-to-b from-white to-steel-light transition hover:-translate-y-0.5 hover:shadow-lg"
     >
-      <div className="relative h-40 w-full bg-oregon-blue/5">
+      <div className="relative h-40 w-full border-b border-steel bg-oregon-blue/5">
         <Image
           src={failed ? PLACEHOLDER : location.photos[0] ?? PLACEHOLDER}
           alt={location.name}
@@ -28,15 +28,25 @@ export default function LocationCard({ location, distanceMiles }: LocationCardPr
           className="object-cover"
           onError={() => setFailed(true)}
         />
+        {distanceMiles != null && (
+          <span className="bevel-raised absolute right-2 top-2 z-[2] rounded-full border border-gold-dark bg-gradient-to-b from-gold-light via-gold to-gold-dark px-2.5 py-1 text-xs font-bold text-oregon-blue-dark">
+            {distanceMiles.toFixed(1)} mi away
+          </span>
+        )}
       </div>
       <div className="p-3">
-        <h3 className="font-semibold text-oregon-blue">{location.name}</h3>
-        <p className="mt-1 text-sm text-oregon-blue/70">
-          {location.state} &middot; {location.category} &middot; {location.difficulty}
-        </p>
-        {distanceMiles != null && (
-          <p className="mt-1 text-sm text-washington-green">{distanceMiles.toFixed(1)} mi away</p>
-        )}
+        <h3 className="font-semibold text-oregon-blue-dark">{location.name}</h3>
+        <div className="mt-1.5 flex flex-wrap gap-1.5 text-xs font-medium">
+          <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
+            {location.state}
+          </span>
+          <span className="bevel-raised rounded border border-steel-dark bg-gradient-to-b from-steel-light to-steel px-1.5 py-0.5 text-oregon-blue-dark">
+            {location.category}
+          </span>
+          <span className="bevel-raised rounded border border-washington-green-dark bg-gradient-to-b from-washington-green-light to-washington-green px-1.5 py-0.5 text-white">
+            {location.difficulty}
+          </span>
+        </div>
       </div>
     </Link>
   );

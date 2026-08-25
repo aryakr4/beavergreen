@@ -43,7 +43,9 @@ export default function ReviewList({ locationId, refreshKey }: ReviewListProps) 
 
   if (error) {
     return (
-      <p className="rounded border border-gold bg-gold/20 px-3 py-2 text-sm text-oregon-blue">{error}</p>
+      <p className="bevel-inset rounded border border-gold-dark bg-gold/20 px-3 py-2 text-sm text-oregon-blue-dark">
+        {error}
+      </p>
     );
   }
   if (reviews === null) return <p className="text-sm text-oregon-blue/50">Loading reviews…</p>;
@@ -52,15 +54,18 @@ export default function ReviewList({ locationId, refreshKey }: ReviewListProps) 
   return (
     <ul className="flex flex-col gap-3">
       {reviews.map((review) => (
-        <li key={review.id} className="rounded-lg border border-oregon-blue/15 bg-white p-3">
-          <p className="text-sm font-medium text-oregon-blue">
-            <span className="text-gold">{"★".repeat(review.rating)}</span>
-            {"☆".repeat(5 - review.rating)}
+        <li
+          key={review.id}
+          className="card-glint bevel-panel rounded-lg border border-steel bg-gradient-to-b from-white to-steel-light p-3"
+        >
+          <p className="text-sm font-medium text-oregon-blue-dark">
+            <span className="text-emboss text-gold-dark">{"★".repeat(review.rating)}</span>
+            <span className="text-steel-dark">{"☆".repeat(5 - review.rating)}</span>
             {review.authorName && (
               <span className="ml-2 font-normal text-oregon-blue/50">by {review.authorName}</span>
             )}
           </p>
-          <p className="mt-1 text-oregon-blue/80">{review.text}</p>
+          <p className="mt-1 text-oregon-blue-dark/80">{review.text}</p>
         </li>
       ))}
     </ul>
