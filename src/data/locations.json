@@ -19,7 +19,7 @@
       "dogFriendly": true
     },
     "photos": [
-      "/images/placeholder.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Multnomah_Falls_October_2019_stack.jpg/1280px-Multnomah_Falls_October_2019_stack.jpg"
     ],
     "createdAt": "2026-08-19"
   },
@@ -42,7 +42,7 @@
       "dogFriendly": true
     },
     "photos": [
-      "/images/placeholder.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Smith_Rock_State_Park_Oregon_D3C1205-400516A033.jpg/1280px-Smith_Rock_State_Park_Oregon_D3C1205-400516A033.jpg"
     ],
     "createdAt": "2026-08-19"
   },
@@ -65,7 +65,7 @@
       "dogFriendly": true
     },
     "photos": [
-      "/images/placeholder.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Davis_Peak_seen_from_Diablo_Lake_Overlook_in_the_North_Cascades.jpg/1280px-Davis_Peak_seen_from_Diablo_Lake_Overlook_in_the_North_Cascades.jpg"
     ],
     "createdAt": "2026-08-19"
   },
@@ -87,7 +87,7 @@
       "dogFriendly": false
     },
     "photos": [
-      "/images/placeholder.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rocks_seen_from_Ruby_Beach._Olympic_National_Park.jpg/1280px-Rocks_seen_from_Ruby_Beach._Olympic_National_Park.jpg"
     ],
     "createdAt": "2026-08-19"
   },
@@ -111,7 +111,7 @@
       "dogFriendly": false
     },
     "photos": [
-      "/images/placeholder.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Bagby_hot_springs_oregon.jpg/1280px-Bagby_hot_springs_oregon.jpg"
     ],
     "createdAt": "2026-08-19"
   },
